@@ -1,23 +1,24 @@
 //todo:-------------------------------- PAIRS --------------------------------
 
-for a pair ---> (1,3)
+//*for a pair ---> (1,3)
 //! Syntax ---> pair<int , int> p = {1 , 3};
 //? cout << p.first << p.second;
 
-for a triplet ---> (1,3,4)
+//*for a triplet ---> (1,3,4)
 //! Syntax ---> pair< int , pair <int , int > > p = {1 , {3,4}};
 //? cout << p.first << p.second.second << p.second.first
 
-for array ---> {(1,2) , (2,5) , (5,1)}
+//*for array ---> {(1,2) , (2,5) , (5,1)}
 //! Syntax ---> pair<int , int>arr[] = { {1,2} ,  {2,5} , {5,1} }
 //? cout << arr[1].second 
+//* The datatype in the pair can be changed.
 
 
 //todo:--------------------------------VECTORS--------------------------------
 
 vector<int> v;
-v.push_back(1);
-v.emplace_back(2);
+v.push_back(1);             //? Use it when the object is defined 
+v.emplace_back(2);          //? Use it when you want to create a object inside the vector
 
 Both push_back and emplace_back adds an element to vector. 
 // ----------------------------------------
@@ -68,7 +69,7 @@ cout<< v.back();   -----> prints the last element of the vector.
 
 //todo: METHOD 1
 
-for(it = v.begin() ; it != v.end() ; it++){
+for(vector<datatype>::iterator it = v.begin() ; it != v.end() ; it++){
     cout << *(it);
 }
 -----------------------------------------------------------------------------------------------
@@ -100,9 +101,9 @@ automatically iterates till end of the vector.
 //* To delete elements of vector 
 v = {10,20,30,40,50,60,70,80,90,100}
 
-v.erase(v.begin() + 1);  // deletes the whole vector.
+v.erase(v.begin() + 1);  // deletes the element in vector at v.begin()+1
 
-v.erase(v.begin() + 2  , v.begin() + 4) //deletes range of elements in vector.
+v.erase(v.begin() + 2  , v.begin() + 4) //deletes range of elements in vector.[v.begin()+2,v.begin()+4)
 output ----> So, begin() = 10 
              therefore begin() + 2 = 30 
              and begin() + 4 = 50

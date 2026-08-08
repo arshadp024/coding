@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Assuming 'n' is defined, for example: int n = 5;
     int n = 5; 
 
     for (int i = 0; i < n; i++) {

@@ -11,3 +11,14 @@ for(int i=0;i<n;i++){
 }
 return 0;
 }
+// void pattern14(int n){
+//         for(int i=0; i<n; i++){
+//             char letter = 'A';
+            
+//             for(int j=0; j<i+1; j++){
+//                 cout << letter;
+//                 letter +=1;
+//             }
+//             cout << endl;
+//         }
+//     }

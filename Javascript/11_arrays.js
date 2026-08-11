@@ -9,7 +9,7 @@
 
 // console.log("---------------------------------------------------------------------");
 
-// let c = num.join("_");
+// let c = num.join("_");//! If we change "_" with anything it will be in the middle of two elements of arrray 
 // console.log(c);
 
 // console.log("---------------------------------------------------------------------");

@@ -2,7 +2,7 @@
 using namespace std;
 int largestElement(vector<int>& nums) {
     int largestElement=nums[0];
-      for(int i=0;i<nums.size()-2;i++){
+      for(int i=0;i<=nums.size()-1;i++){
         if(largestElement<nums[i+1]){
             largestElement=nums[i+1];
         }

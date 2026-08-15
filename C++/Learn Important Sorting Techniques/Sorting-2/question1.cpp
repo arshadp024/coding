@@ -1,7 +1,7 @@
  #include<bits/stdc++.h>
  using namespace std;
  void merge(vector<int>&arr,int low,int mid,int high);
- void mergeSort(vector<int>& arr, int l, int r) {
+ void mergeSort(vector<int>& arr, int l, int r) {            //! The l and r are used to define the part of array we are working on
        if(l==r){
            return;
        }
@@ -13,7 +13,7 @@
     }
 void merge(vector<int>&arr,int low,int mid,int high){
         vector<int> temp;
-        int left=low;
+        int left=low;                              //*The number of independent position we want to track is the number of pointer we use 
         int right=mid+1;
         while(left<=mid&&right<=high){
             if(arr[left]<=arr[right]){

@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void rotateclockwiseby1(vector<int> &arr, int k )
+void rotateclockwisebyk(vector<int> &arr, int k )
 {
     int n = arr.size();
     vector<int> newarr(n);
@@ -19,7 +19,7 @@ void rotateclockwiseby1(vector<int> &arr, int k )
 }
 int main(){
     vector<int>v={1,2,3,4,5};
-    rotateclockwiseby1(v,4);
+    rotateclockwisebyk(v,4);
     for(auto i:v){
         cout<<i<<endl;
     }

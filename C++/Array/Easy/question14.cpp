@@ -41,3 +41,9 @@ int longestSubarrayWithSumK(vector<int> a, long long k) {
     }
     return maxLen;
 }
+//*find() 
+//? mp.find(key)----> returns iterator and if not found returns mp.end()
+//?if(mp.find(key)!=mp.end())----->If The key exists in the map
+//?mp.find(key)!=mp.end()----->If The key exists in the map
+//?mp.find(key)==mp.end()----->The key does not exist in  the map
+//?

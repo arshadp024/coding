@@ -85,8 +85,6 @@ public:
                 left++;
             }
         }
-
-
         return spiral;
     }
 };

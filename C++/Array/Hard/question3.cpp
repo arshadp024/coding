@@ -50,7 +50,6 @@ public:
         }
         }
         sort(v.begin(), v.end());
-
         v.erase(unique(v.begin(), v.end()), v.end());    //!Unique moves the duplicates to the end and the iterator to the element before the duplicate
         return v;
     }

@@ -38,7 +38,6 @@ class Solution {
 
                     mp[XOR]++;
                 }
-
                 return count;
     }
 };

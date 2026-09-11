@@ -65,7 +65,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             sum += arr[i];
-            sum_square += 1LL * arr[i] * arr[i];
+            sum_square += 1LL * arr[i] * arr[i];         //1LL stands for long long 
         }
 
         long long temp = n * (n + 1) / 2;

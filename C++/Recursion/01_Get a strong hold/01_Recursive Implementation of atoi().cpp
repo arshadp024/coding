@@ -43,7 +43,7 @@ public:
         return rem_space(s, i);
     }
 };
------------------------------------------------optimal--------------------------------------------------------------
+-----------------------------------------------optimal(Recursive)--------------------------------------------------------------
 //* s.erase in recursive function takes O(n) time complexity , so i changed that....
 class Solution {
 public:

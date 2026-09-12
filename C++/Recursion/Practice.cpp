@@ -164,4 +164,20 @@ using namespace std;
 //         return a;
 //     }
 // };
+//! fibonacchi series
+// int fibbo(int n){
+//     int sum;
+//     if(n==0){
+//         return 0;
+//     }
+//     if(n==1){
+//         return 1;
+//     }
+//     sum=fibbo(n-1)+fibbo(n-2);
+//     return sum;
+// }
+// int main(){
+//     cout<<fibbo(1);
+//     return 0;
+// }
 

@@ -22,3 +22,32 @@ reversestring(name,length);
     cout<<name;
 return 0;
 }
+--------------------------------------------------------------Better----------------------------------------------
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        string v;
+        string v1;
+        int temp = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (isalnum(static_cast<unsigned char>(s[i]))) {
+                v.push_back(tolower(static_cast<unsigned char>(s[i])));
+            }
+        }
+        v1 = v;
+        reverse(v, 0, v.length() - 1);
+        if (v == v1) {
+            temp = 1;
+        }
+        return temp;
+    }
+
+    string reverse(string& a, int i, int j) {
+        if (i >= j) {
+            return a;
+        }
+        swap(a[i], a[j]);
+        reverse(a, i + 1, j - 1);
+        return a;
+    }
+};

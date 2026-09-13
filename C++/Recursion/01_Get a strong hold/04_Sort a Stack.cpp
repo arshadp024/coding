@@ -28,7 +28,7 @@ class Solution {
        return sort(st,v);
     }
 };
------------------------------------------------------Optimal-------------------------------------------------------
+-----------------------------------------------------Better-------------------------------------------------------
 class Solution {
   public:
     void sortStack(stack<int> &st) {
@@ -88,5 +88,35 @@ class Solution {
             temp_st.pop();
         }
         return sort(st, s1, s2);
+    }
+};
+----------------------------------------------optimal-----------------------------------------------------
+class Solution {
+  public:
+    void insertSorted(stack<int> &st, int val){
+        if(st.empty() || val >= st.top()){
+            st.push(val);
+            return;
+        }        
+
+        int currVal = st.top();
+        st.pop();
+
+        insertSorted(st, val);
+
+        st.push(currVal);
+    }
+    void sortStack(stack<int> &st) {
+        int n = st.size();
+        stack<int> temp;
+
+        if(n <= 1) return;
+
+        int val = st.top();
+        st.pop();
+
+        sortStack(st);
+
+        insertSorted(st , val);
     }
 };

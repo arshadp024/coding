@@ -1,6 +1,4 @@
 ---------------------------------------------------Optimal-----------------------------------------------------------
-//! Recursive approach
-
 class Solution {
   public:
     void insertAtBottom(stack<int> &st , int val){

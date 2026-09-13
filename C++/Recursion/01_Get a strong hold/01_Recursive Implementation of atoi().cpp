@@ -15,10 +15,10 @@ public:
         if (temp == 0) {
             a = -a;
         }
-        if (a > 2147483647) {                  //these was my part written below (gemini modified my part into two if's)
-            return 2147483647;                 // if(a>2147483647){
-        }                                      // return 2147483647;
-        if (a < -2147483648) {                 //} Ask nayan why?
+        if (a > 2147483647) {                 
+            return 2147483647;                
+        }                                       
+        if (a < -2147483648) {                 
             return -2147483648;
         }
         return a;

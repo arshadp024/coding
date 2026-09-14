@@ -1,6 +1,6 @@
 Similar question on gfg
-Given a positive integer n, count all possible distinct binary strings of length n such that there are no consecutive 1’s.
------------------------------------------------Brute----------------------------------------
+Q.Given a positive integer n, count all possible distinct binary strings of length n such that there are no consecutive 1’s.
+-----------------------------------------------Optimal without DP----------------------------------------
 class Solution {
   public:
     int countStrings(int n) {

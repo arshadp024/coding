@@ -30,29 +30,31 @@ striver question
 class Solution
 {
 public:
-    vector generateBinaryStrings(int n)
+    vector<string> generateBinaryStrings(int n)
     {
-        vector<int>v;
+        vector<string> v;
         string s;
         binary(v, s, n);
         return v;
     }
-    vector binary(vector &v, string &s, int n)
+
+    void binary(vector<string> &v, string &s, int n)
     {
         if (s.size() == n)
         {
             v.push_back(s);
-            return v;
+            return;
         }
+
         s.push_back('0');
-        v=binary(v, s, n);
+        binary(v, s, n);
         s.pop_back();
-        if (s.size()!=0&&s.back() !='1')
+
+        if (s.size() != 0 && s.back() != '1')
         {
             s.push_back('1');
-            v=binary(v, s, n);
+            binary(v, s, n);
             s.pop_back();
         }
-        return v;
     }
 };

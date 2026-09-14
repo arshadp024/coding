@@ -32,7 +32,7 @@ class Solution
 public:
     vector generateBinaryStrings(int n)
     {
-        vector v;
+        vector<int>v;
         string s;
         binary(v, s, n);
         return v;

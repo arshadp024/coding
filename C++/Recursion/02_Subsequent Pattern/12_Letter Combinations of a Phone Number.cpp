@@ -27,3 +27,7 @@ public:
            return b;
     }
 };
+//The question I was unable to solve in Recursion(used ai to solve them)
+//combination 1 considers all the permutation
+//combination 2 is a way in recursion for finding permutation without repetition
+//Solve any question by thinking on the above two different recursion approachs

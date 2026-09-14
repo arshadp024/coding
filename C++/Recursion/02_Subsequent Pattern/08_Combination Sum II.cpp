@@ -65,3 +65,41 @@ public:
     }
 };
 -----------------------------------------------------Optimal--------------------------------------
+class Solution {
+public:
+    void Combination(int ind, vector<int>& candidates, int target,
+                     vector<vector<int>>& ans, vector<int>& r) {
+
+        if (target == 0) {
+            ans.push_back(r);
+            return;
+        }
+
+        for (int i = ind; i < candidates.size(); i++) {
+
+            if (i > ind && candidates[i] == candidates[i - 1])
+                continue;
+
+            if (candidates[i] > target)
+                break;
+
+            r.push_back(candidates[i]);
+
+            Combination(i + 1, candidates, target - candidates[i],
+                        ans, r);
+
+            r.pop_back();
+        }
+    }
+
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        vector<vector<int>> ans;
+        vector<int> r;
+
+        sort(candidates.begin(), candidates.end());
+
+        Combination(0, candidates, target, ans, r);
+
+        return ans;
+    }
+};

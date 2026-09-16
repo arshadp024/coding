@@ -180,4 +180,34 @@ using namespace std;
 //     cout<<fibbo(1);
 //     return 0;
 // }
+//! Pattern 1: Print All Subsequences
+void printS(int ind, vector<int>& ds, int arr[], int n) {
+    if (ind == n) {
+       if (ds.size() == 0) {
+            cout << "{}";
+        } else {
+            for (auto it : ds) {
+                cout << it << " ";
+            }
+        }
+        cout << endl;
+        return;
+    }
 
+    // pick the current element
+    ds.push_back(arr[ind]);
+    printS(ind + 1, ds, arr, n);
+    // not pick the current element
+    ds.pop_back();
+    printS(ind + 1, ds, arr, n);
+}
+
+int main() {
+    int arr[] = {3, 1, 2};
+    int n = 3;
+
+    vector<int> ds;
+    printS(0, ds, arr, n);
+
+    return 0;
+}

@@ -7,7 +7,7 @@ public:
     myStack(int n) {
         capacity = n;
         top = -1;
-        arr = new int[n];
+        arr = new int[n];         //for defining the size of the array which is defined in the private.
     }
 
     bool isEmpty() {
@@ -37,3 +37,4 @@ public:
         return -1;
     }
 };
+//*Implementation of array requires a fix size of the stack defined because array is static.

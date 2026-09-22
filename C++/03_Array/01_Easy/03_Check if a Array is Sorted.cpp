@@ -39,3 +39,20 @@ bool isSorted(vector<int>& arr) {
         
 //     }
 // };
+------------------------------------------------------- New Striver(Optimal)----------------
+class Solution {
+   public:
+    bool arraySortedOrNot(int arr[], int n) {
+        int temp = 0;
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                temp++;
+                break;
+            }
+        }
+        if (temp == 0) {
+            return 1;
+        }
+        return 0;
+    }
+};

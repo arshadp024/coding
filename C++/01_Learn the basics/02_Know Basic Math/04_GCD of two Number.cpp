@@ -55,3 +55,16 @@ return 0;
         }
     return 1;
     }*/
+ ------------------------------------------------New Striver(Gcd)(Optimal)---------------------
+   class Solution {
+public:
+    int GCD(int n1,int n2) {
+     while(min(n1,n2)>0){
+        int a =min(n1,n2);
+        int b=max(n1,n2);
+        n1=b%a;
+        n2=a;
+     }
+     return max(n1,n2);
+    }
+};

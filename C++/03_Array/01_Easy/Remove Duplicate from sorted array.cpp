@@ -6,7 +6,7 @@ public:
         return nums.size();
     }
 };
------------------------------------(Optimal)---------------------------------
+--------------------------------------------Optimal---------------------------------
 class Solution {
    public:
     int removeDuplicates(vector<int>& nums) {

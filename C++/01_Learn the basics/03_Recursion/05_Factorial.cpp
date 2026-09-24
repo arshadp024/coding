@@ -1,18 +1,18 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int Sum(int x){
-    if(x>0){
-        return x+Sum(x-1);
+int factorial(int n){
+    if(n>0){
+        return n*factorial(n-1);
     }else{
-        return 0;
+        return 1;
     }
 }
-int main() {
-    int n;
+int main(){
+    int x;
     cout<<"Enter a Number:";
-    cin >> n;
-    cout<<Sum(n);
-    return 0;
+    cin>>x;
+    cout<<factorial(x);
+return 0;
 }
 ---------------------------------------------New Striver(Optimal)-----------------------------------------
 class Solution {
